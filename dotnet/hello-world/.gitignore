@@ -1,0 +1,5 @@
+
+# .NET binaries
+bin/*
+obj/*
+.idea/*

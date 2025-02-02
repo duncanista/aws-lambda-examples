@@ -5,6 +5,7 @@ import * as events from 'aws-cdk-lib/aws-events';
 import * as targets from 'aws-cdk-lib/aws-events-targets';
 
 import { getDotnetFunctions } from './dotnet-functions';
+import { getRustFunctions } from './rust-functions';
 
 export class ExamplesStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -18,11 +19,17 @@ export class ExamplesStack extends cdk.Stack {
       description: 'Rule to trigger Lambda function every hour',
     });
 
+    // Functions
+    const functions: lambda.Function[] = [];
+
+    // Create Rust Lambda Functions
+    functions.push(...getRustFunctions(this));
+
     // Create .NET Lambda Functions
-    const dotnetFunctions = getDotnetFunctions(this); 
+    functions.push(...getDotnetFunctions(this));
 
     // Add the Lambda function as a target for the rule
-    dotnetFunctions.map(f => addTarget(rule, f));
+    functions.map(f => addTarget(rule, f));
   }
 }
 

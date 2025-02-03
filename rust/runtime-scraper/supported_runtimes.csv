@@ -1,0 +1,18 @@
+Name,Identifier,Operating system,Deprecation date,Block function create,Block function update
+Node.js 22,nodejs22.x,Amazon Linux 2023,Not scheduled,Not scheduled,Not scheduled
+Node.js 20,nodejs20.x,Amazon Linux 2023,Not scheduled,Not scheduled,Not scheduled
+Node.js 18,nodejs18.x,Amazon Linux 2,"Jul 31, 2025","Sep 1, 2025","Oct 1, 2025"
+Python 3.13,python3.13,Amazon Linux 2023,Not scheduled,Not scheduled,Not scheduled
+Python 3.12,python3.12,Amazon Linux 2023,Not scheduled,Not scheduled,Not scheduled
+Python 3.11,python3.11,Amazon Linux 2,Not scheduled,Not scheduled,Not scheduled
+Python 3.10,python3.10,Amazon Linux 2,Not scheduled,Not scheduled,Not scheduled
+Python 3.9,python3.9,Amazon Linux 2,Not scheduled,Not scheduled,Not scheduled
+Java 21,java21,Amazon Linux 2023,Not scheduled,Not scheduled,Not scheduled
+Java 17,java17,Amazon Linux 2,Not scheduled,Not scheduled,Not scheduled
+Java 11,java11,Amazon Linux 2,Not scheduled,Not scheduled,Not scheduled
+Java 8,java8.al2,Amazon Linux 2,Not scheduled,Not scheduled,Not scheduled
+.NET 8,dotnet8,Amazon Linux 2023,Not scheduled,Not scheduled,Not scheduled
+Ruby 3.3,ruby3.3,Amazon Linux 2023,Not scheduled,Not scheduled,Not scheduled
+Ruby 3.2,ruby3.2,Amazon Linux 2,Not scheduled,Not scheduled,Not scheduled
+OS-only Runtime,provided.al2023,Amazon Linux 2023,Not scheduled,Not scheduled,Not scheduled
+OS-only Runtime,provided.al2,Amazon Linux 2,Not scheduled,Not scheduled,Not scheduled

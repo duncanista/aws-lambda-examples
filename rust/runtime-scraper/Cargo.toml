@@ -1,0 +1,16 @@
+[package]
+name = "runtime-scraper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lambda_http = "0.13.0"
+prettytable-rs = "0.10.0"
+reqwest = { version = "0.12", features = ["json", "http2", "rustls-tls"], default-features = false }
+scraper = "0.22.0"
+similar = "2.7.0"
+
+tokio = { version = "1", features = ["macros"] }
+
+[package.metadata.lambda.build]
+include = [ "deprecated_runtimes.csv", "supported_runtimes.csv" ]

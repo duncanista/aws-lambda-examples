@@ -18,5 +18,16 @@ export const getRustFunctions = (stack: cdk.Stack): lambda.Function[] => {
     architecture: lambda.Architecture.X86_64,
   });
 
-  return [arm, amd];
+  const scraper = new RustFunction(stack, 'runtime-scraper', {
+    manifestPath: './rust/runtime-scraper/Cargo.toml',
+    memorySize: RUST_MEMORY_SIZE,
+    architecture: lambda.Architecture.ARM_64,
+    bundling: {
+      cargoLambdaFlags: [
+        '--output-format zip'
+      ]
+    }
+  });
+
+  return [arm, amd, scraper];
 }
